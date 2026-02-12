@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="23" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="59">
+ <editorsettings>
+  <export target="map_castletown_room.lua" format="lua"/>
+ </editorsettings>
+ <imagelayer id="5" name="bg">
+  <image source="../../../assets/sprites/tilesets/bg_castletown_room_merged.png" width="922" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="8" name="collision">
+  <object id="19" x="505.333" y="142.667" width="70.6667" height="50.6667"/>
+  <object id="22" x="429.333" y="156" width="54.6667" height="42.6667"/>
+  <object id="23" x="350.667" y="141.333" width="70.6667" height="52"/>
+  <object id="24" x="244" y="98.6667" width="61.3333" height="105.333"/>
+  <object id="25" x="314.667" y="1.33333" width="28" height="160"/>
+  <object id="26" x="0" y="0" width="125.333" height="480"/>
+  <object id="28" x="124" y="412" width="134.667" height="66.6667"/>
+  <object id="30" x="345.333" y="410.667" width="234.667" height="69.3333"/>
+  <object id="33" x="669.333" y="410.667" width="250.667" height="69.3333"/>
+  <object id="34" x="800" y="0" width="120" height="409.333"/>
+  <object id="35" x="697.333" y="146.667" width="85.3333" height="126.667"/>
+  <object id="38" x="144" y="153.333" width="81.3333" height="118.333"/>
+  <object id="40" x="605.333" y="140" width="77.3333" height="56"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="9" name="objects">
+  <object id="41" name="script" x="654" y="210.166" width="33.3333" height="45.3333">
+   <properties>
+    <property name="cutscene" value="castletown.wakeup"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="42" name="interactable" x="604.667" y="181.667" width="78.3333" height="14.3333"/>
+  <object id="43" name="interactable" x="696" y="200" width="87" height="72.5"/>
+  <object id="44" name="interactable" x="505" y="167.5" width="71.5" height="26"/>
+  <object id="45" name="interactable" x="428.5" y="156.5" width="56" height="42"/>
+  <object id="46" name="interactable" x="349" y="162" width="73" height="33"/>
+  <object id="47" name="interactable" x="244" y="161" width="62.5" height="43"/>
+  <object id="48" name="interactable" x="143" y="197.5" width="82.5" height="73.5"/>
+  <object id="50" name="transition" x="262.667" y="473.333" width="75.3333" height="25.3333">
+   <properties>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="map" value="map_castletown_firstfloor"/>
+    <property name="marker" value="hall1"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="53" name="transition" x="588" y="469" width="74" height="25">
+   <properties>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="map" value="map_castletown_firstfloor"/>
+    <property name="marker" value="hall2"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="4" name="markers">
+  <object id="2" name="spawn" x="673" y="241">
+   <point/>
+  </object>
+  <object id="56" name="room1" x="300" y="440">
+   <point/>
+  </object>
+  <object id="57" name="room2" x="620" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
