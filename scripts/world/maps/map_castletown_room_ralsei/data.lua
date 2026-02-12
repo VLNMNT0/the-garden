@@ -48,7 +48,7 @@ return {
     },
     {
       type = "imagelayer",
-      image = "../../../assets/sprites/tilesets/bg_ralsei_room.png",
+      image = "../../../../assets/sprites/tilesets/bg_ralsei_room.png",
       id = 2,
       name = "bg",
       class = "",
@@ -64,7 +64,7 @@ return {
     },
     {
       type = "imagelayer",
-      image = "../../../assets/sprites/tilesets/couch_cushion.png",
+      image = "../../../../assets/sprites/tilesets/couch_cushion.png",
       id = 3,
       name = "cushion_bed",
       class = "",
@@ -80,7 +80,7 @@ return {
     },
     {
       type = "imagelayer",
-      image = "../../../assets/sprites/tilesets/ralsei_plush.png",
+      image = "../../../../assets/sprites/tilesets/ralsei_plush.png",
       id = 7,
       name = "plushie",
       class = "",
