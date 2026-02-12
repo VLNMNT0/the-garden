@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="23" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="77">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="23" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="80">
  <editorsettings>
   <export target="map_castletown_room_table.lua" format="lua"/>
  </editorsettings>
@@ -24,9 +24,9 @@
   <object id="38" x="144" y="153.333" width="81.3333" height="118.333"/>
   <object id="40" x="605.333" y="140" width="77.3333" height="56"/>
   <object id="65" x="394.5" y="273.333" width="131.5" height="59.1667"/>
-  <object id="67" x="449.833" y="236.833" width="28.5" height="36.5"/>
-  <object id="71" x="320.667" y="308.333" width="32" height="26.6667"/>
-  <object id="72" x="573" y="306.333" width="26.3333" height="26"/>
+  <object id="67" x="444.333" y="234.833" width="28.5" height="2.66667"/>
+  <object id="71" x="330.67" y="308.333" width="32" height="15.3334"/>
+  <object id="72" x="573" y="306.333" width="26.3333" height="15.3333"/>
  </objectgroup>
  <objectgroup color="#ff00ff" id="9" name="objects">
   <object id="42" name="interactable" x="604.667" y="181.667" width="78.3333" height="14.3333"/>
@@ -52,7 +52,7 @@
     <property name="sound" value="dooropen"/>
    </properties>
   </object>
-  <object id="69" name="interactable" x="391.917" y="266.28" width="139.833" height="71.5228">
+  <object id="69" name="interactable" x="398.417" y="275.28" width="125.333" height="55.5228">
    <properties>
     <property name="cutscene" value="room_table.set_table"/>
    </properties>
@@ -77,6 +77,15 @@
     <property name="cutscene" value="room_table.leaving"/>
     <property name="once" type="bool" value="false"/>
    </properties>
+  </object>
+  <object id="77" name="kris_chair" x="460.833" y="225">
+   <point/>
+  </object>
+  <object id="78" name="ralsei_chair" x="346.67" y="292">
+   <point/>
+  </object>
+  <object id="79" name="susie_chair" x="586" y="294">
+   <point/>
   </object>
  </objectgroup>
  <objectgroup color="#aa00ff" id="4" name="markers">

@@ -2,35 +2,34 @@ return {
     wakeup = function (cutscene, event)
         local susie = cutscene:getCharacter("susie")
         local kris = cutscene:getCharacter("kris")
-        
+
         cutscene:wait(cutscene:fadeOut(0))
 
-        -- cutscene:wait(3)
-
-        -- Assets.playSound("hurt")
-        -- cutscene:wait(1)
-        -- Assets.playSound("bump")
-        -- cutscene:wait(0.4)
-        -- Assets.playSound("bump")
-        -- cutscene:wait(0.4)
-        -- Assets.playSound("bump")
-
-        -- cutscene:wait(1)
-
-        -- cutscene:text("[speed:0.2]* ... you promised.")
-
-        -- cutscene:wait(1)
-        -- Assets.playSound("noise")
-        -- cutscene:wait(0.6)
-        -- Assets.playSound("wing")
-
-        -- cutscene:wait(1.5)
-        -- Assets.playSound("escaped")
-
-        kris:setSprite("kris_splat")
-        
         cutscene:wait(3)
 
+        Assets.playSound("hurt")
+        cutscene:wait(1)
+        Assets.playSound("bump")
+        cutscene:wait(0.4)
+        Assets.playSound("bump")
+        cutscene:wait(0.4)
+        Assets.playSound("bump")
+
+        cutscene:wait(1)
+
+        cutscene:text("[speed:0.2]* ... you promised.")
+
+        cutscene:wait(1)
+        Assets.playSound("noise")
+        cutscene:wait(0.6)
+        Assets.playSound("wing")
+
+        cutscene:wait(1.5)
+        Assets.playSound("escaped")
+
+        kris:setSprite("kris_splat")
+
+        cutscene:wait(3)
         
         if susie then
             cutscene:detachCamera()
@@ -43,11 +42,11 @@ return {
             cutscene:walkTo(Game.world.player, x+60, y+20, 0.1, "left")
             
             cutscene:setSpeaker(susie)
-            cutscene:text("* [wait:3].[wait:3].[wait:3].")
+            cutscene:text("* .[wait:3].[wait:3].[wait:3]")
             cutscene:wait(1);
-            cutscene:text("* K[wait:2]r[wait:2]i[wait:2]s[wait:2].[wait:2].[wait:2].[wait:2]")
+            cutscene:text("* [wait:2]K[wait:2]r[wait:2]i[wait:2]s[wait:2].[wait:2].[wait:2].")
             cutscene:wait(1);
-            cutscene:text("* W[wait:2]a[wait:2]k[wait:2]e[wait:2] [wait:2]u[wait:2]p[wait:2],[wait:2] K[wait:2]r[wait:2]i[wait:2]s[wait:2].[wait:2].[wait:2].[wait:2]")
+            cutscene:text("* [wait:2]W[wait:2]a[wait:2]k[wait:2]e[wait:2] [wait:2]u[wait:2]p[wait:2],[wait:2] K[wait:2]r[wait:2]i[wait:2]s[wait:2].[wait:2].[wait:2].")
             
             cutscene:wait(cutscene:fadeIn(1))
             
@@ -90,6 +89,7 @@ return {
             cutscene:wait(1)
             cutscene:text("* DON'T SAY THAT,[wait:1] DUMBASS!!", "teeth_b")
             cutscene:wait(2)
+            susie:resetSprite()
             cutscene:text("* Huh?[wait:1] Nah, I haven't seen Ralsei yet.", "nervous_side")
             cutscene:wait(1)
             cutscene:text("* Wanna go wake him up?", "smile")
@@ -102,6 +102,7 @@ return {
            cutscene:wait(1)
 
            cutscene:text("* Let's go.", "small_smile")
+
 
             Game:setFlag("wakeup", true)
             Game:setFlag("ralsei_wakeup", true)
