@@ -100,8 +100,8 @@ return {
         
         if Game:getFlag("is_table_set") == false or Game:getFlag("is_table_set") == nil then
             cutscene:setSpeaker("susie")
-            cutscene:text("* Hey,[wait:2] what are you doing?[wait:2] Help me with this!", "teeth")
-            cutscene:wait(cutscene:walkTo("kris", x, y-30, 1, "up", true))
+            cutscene:text("* Hey,[wait:2] don't just leave!![wait:2] Help me out!", "teeth")
+            cutscene:wait(cutscene:walkTo("kris", x, y-30, 0.5, "up", true))
         end
     end
 }
