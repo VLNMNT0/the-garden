@@ -3,6 +3,9 @@
  <editorsettings>
   <export target="map_castletown_room.lua" format="lua"/>
  </editorsettings>
+ <properties>
+  <property name="music" value="castletown"/>
+ </properties>
  <imagelayer id="5" name="bg">
   <image source="../../../assets/sprites/tilesets/bg_castletown_room_merged.png" width="922" height="480"/>
  </imagelayer>

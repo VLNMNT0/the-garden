@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 12,
-  nextobjectid = 77,
+  nextobjectid = 80,
   properties = {
     ["music"] = "castletown"
   },
@@ -233,10 +233,10 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 449.833,
-          y = 236.833,
+          x = 444.333,
+          y = 234.833,
           width = 28.5,
-          height = 36.5,
+          height = 2.66667,
           rotation = 0,
           visible = true,
           properties = {}
@@ -246,10 +246,10 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 320.667,
+          x = 330.67,
           y = 308.333,
           width = 32,
-          height = 26.6667,
+          height = 15.3334,
           rotation = 0,
           visible = true,
           properties = {}
@@ -262,7 +262,7 @@ return {
           x = 573,
           y = 306.333,
           width = 26.3333,
-          height = 26,
+          height = 15.3333,
           rotation = 0,
           visible = true,
           properties = {}
@@ -415,10 +415,10 @@ return {
           name = "interactable",
           type = "",
           shape = "rectangle",
-          x = 391.917,
-          y = 266.28,
-          width = 139.833,
-          height = 71.5228,
+          x = 398.417,
+          y = 275.28,
+          width = 125.333,
+          height = 55.5228,
           rotation = 0,
           visible = true,
           properties = {
@@ -484,6 +484,45 @@ return {
             ["cutscene"] = "room_table.leaving",
             ["once"] = false
           }
+        },
+        {
+          id = 77,
+          name = "kris_chair",
+          type = "",
+          shape = "point",
+          x = 460.833,
+          y = 225,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 78,
+          name = "ralsei_chair",
+          type = "",
+          shape = "point",
+          x = 346.67,
+          y = 292,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 79,
+          name = "susie_chair",
+          type = "",
+          shape = "point",
+          x = 586,
+          y = 294,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
         }
       }
     },
