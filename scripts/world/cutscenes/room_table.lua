@@ -41,6 +41,7 @@ return {
             ralsei:setWalkSprite("walk_cake")
 
             Assets.playSound("dooropen")
+            susie:setSprite("walk/down_1")
             cutscene:wait(cutscene:walkTo(ralsei, x-160, y+160, 1, "up", true))
             Assets.playSound("doorclose")
             cutscene:wait(0.5)
@@ -54,8 +55,9 @@ return {
             
             cutscene:setSpeaker(susie)
             cutscene:wait(cutscene:text("* Mhm.[wait:1] Now get over here and park your butt.", "small_smile"))
-
+            
             cutscene:wait(cutscene:walkTo(ralsei, x-160, y+60, 1, "up", true))
+            susie:resetSprite()
             cutscene:wait(cutscene:walkTo(ralsei, x+20, y+60, 2, "right", true))
             cutscene:wait(cutscene:walkTo(ralsei, x+20, y+60, 0, "up", true))
             cutscene:wait(0.5)
@@ -88,8 +90,32 @@ return {
             cutscene:setSpeaker(susie)
             cutscene:wait(cutscene:text("* Yeah,[wait:1] yeah,[wait:1] whatever.[wait:2] Let's just eat already!", "nervous"))
 
-
+            cutscene:wait(2)
             
+            cutscene:setSpeaker(ralsei)
+            cutscene:wait(cutscene:text("* And, um[wait:2].[wait:2].[wait:2].[wait:2] what brought you here so early?", "small_smile"))
+
+            cutscene:wait(1)
+            cutscene:setSpeaker(susie)
+            cutscene:wait(cutscene:text("* You know[wait:2].[wait:2].[wait:2].[wait:2] it gets boring up there,[wait:2] sometimes.", "neutral_side"))
+
+            cutscene:wait(1)
+            
+            cutscene:setSpeaker(ralsei)
+            susie:setAnimation("drink")
+            cutscene:wait(cutscene:text("* What about your school project?", "surprise_smile"))
+
+            cutscene:wait(2)
+            cutscene:setSpeaker(susie)
+            cutscene:wait(cutscene:text("* Yeah[wait:2].[wait:2].[wait:2].[wait:2]", "nervous"))
+            cutscene:wait(1)
+            susie:setSprite("chair_left_hold_shock")
+            cutscene:wait(cutscene:text("* ...[wait:4] wait.", "shock"))
+            cutscene:wait(cutscene:text("* Wait, wait, WAIT!!", "shock_nervous"))
+            Assets.playSound("noise")
+            susie:resetSprite()
+            cutscene:wait(cutscene:walkTo(susie, x, y-20, 0.5))
+            cutscene:wait(cutscene:walkTo(susie, x+10, y-20, 0.5))
         end
 
     end,

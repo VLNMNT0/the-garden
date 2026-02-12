@@ -3,6 +3,7 @@ return {
         local susie = cutscene:getCharacter("susie")
         local kris = cutscene:getCharacter("kris")
 
+        -- Game.world.music:pause()
         -- cutscene:wait(cutscene:fadeOut(0))
 
         -- cutscene:wait(3)
@@ -61,8 +62,7 @@ return {
         --     cutscene:wait(0.5)
         --     susie:setSprite("walk/right_1")
         --     cutscene:walkTo(susie, x-20, y+20, 0.1, "right")
-
-        --     cutscene:wait(Game.world.music:play("castletown"))
+        --     Game.world.music:resume()
         --     kris:resetSprite()
         --     cutscene:text("* Mornin',[wait:1] sleepyhead.","smile")
         --     susie:resetSprite()
@@ -104,8 +104,8 @@ return {
         --    cutscene:text("* Let's go.", "small_smile")
 
 
-        --     Game:setFlag("wakeup", true)
-            -- Game:setFlag("ralsei_wakeup", true)
+            Game:setFlag("wakeup", true)
+            Game:setFlag("ralsei_wakeup", true)
         -- end
     end
 }

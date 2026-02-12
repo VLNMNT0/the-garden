@@ -22,10 +22,10 @@
  <imagelayer id="2" name="bg">
   <image source="../../../assets/sprites/tilesets/bg_ralsei_room.png" width="640" height="480"/>
  </imagelayer>
- <imagelayer id="3" name="cushion_bed" offsetx="286.667" offsety="208">
+ <imagelayer id="3" name="cushion_bed" offsetx="295.667" offsety="207.5">
   <image source="../../../assets/sprites/tilesets/couch_cushion.png" width="60" height="60"/>
  </imagelayer>
- <imagelayer id="7" name="plushie" offsetx="357" offsety="213">
+ <imagelayer id="7" name="plushie" offsetx="373" offsety="212.5">
   <image source="../../../assets/sprites/tilesets/ralsei_plush.png" width="32" height="42"/>
  </imagelayer>
  <objectgroup color="#0000ff" id="4" name="collision">
@@ -34,8 +34,8 @@
   <object id="3" x="80" y="160" width="449.333" height="40"/>
   <object id="4" x="532.5" y="200" width="27.5" height="210"/>
   <object id="5" x="358.667" y="410.667" width="174.833" height="69.3333"/>
-  <object id="6" x="288" y="209.5" width="56" height="56"/>
-  <object id="12" x="362.333" y="220.333" width="19.6667" height="30.6667"/>
+  <object id="6" x="297" y="210" width="56" height="56"/>
+  <object id="12" x="377.333" y="219.333" width="19.6667" height="30.6667"/>
  </objectgroup>
  <objectgroup color="#aa00ff" id="5" name="markers">
   <object id="7" name="ralseiroom" x="320" y="440">
@@ -44,7 +44,7 @@
   <object id="8" name="spawn" x="317" y="342">
    <point/>
   </object>
-  <object id="14" name="room_exit" x="321.5" y="559">
+  <object id="14" name="room_exit" x="320.5" y="597.167">
    <point/>
   </object>
  </objectgroup>

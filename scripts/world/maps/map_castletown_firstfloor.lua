@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 30,
+  nextobjectid = 31,
   properties = {
     ["music"] = "castletown"
   },
@@ -362,6 +362,22 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "kris_room.transition_k"
+          }
+        },
+        {
+          id = 30,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 125.333,
+          y = 402.667,
+          width = 110.667,
+          height = 20,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "hall.not_awake",
+            ["once"] = false
           }
         }
       }
