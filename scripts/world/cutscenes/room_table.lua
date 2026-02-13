@@ -107,15 +107,27 @@ return {
 
             cutscene:wait(2)
             cutscene:setSpeaker(susie)
-            cutscene:wait(cutscene:text("* Yeah[wait:2].[wait:2].[wait:2].[wait:2]", "nervous"))
+            cutscene:wait(cutscene:text("* Right[wait:2].[wait:2].[wait:2].[wait:2]", "nervous"))
             cutscene:wait(1)
             susie:setSprite("chair_left_hold_shock")
             cutscene:wait(cutscene:text("* ...[wait:4] wait.", "shock"))
             cutscene:wait(cutscene:text("* Wait, wait, WAIT!!", "shock_nervous"))
             Assets.playSound("noise")
             susie:resetSprite()
-            cutscene:wait(cutscene:walkTo(susie, x, y-20, 0.5))
-            cutscene:wait(cutscene:walkTo(susie, x+10, y-20, 0.5))
+            kris:setSprite("walk/right_1")
+            cutscene:wait(cutscene:walkTo(susie, x+90, y-20, 0.3))
+            cutscene:walkTo(susie, x+30, y-20, 0.3, "left")
+            cutscene:wait(0.3)
+            kris:setSprite(nil)
+            susie:setAnimation("shake")
+            repeat
+                Assets.playSound("noise")
+                cutscene:wait(0.2)
+            until 
+            cutscene:setSpeaker(susie)
+            cutscene:wait(cutscene:text("* KRIS!! [wait:3]WE ONLY HAVE ONE DAY TO FINISH THE PROJECT!!"))
+            susie.sprite:pause()
+            
         end
 
     end,
