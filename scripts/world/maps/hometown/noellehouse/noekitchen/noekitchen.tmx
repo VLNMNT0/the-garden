@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="38">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="inside" type="bool" value="true"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="noelle"/>
+  <property name="name" value="Noelle's House"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="32" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <imagelayer id="2" name="bg">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/noellehouse/noellekitchen.png" width="1280" height="480"/>
+ </imagelayer>
+ <objectgroup color="#ff00ff" id="3" name="objects">
+  <object id="1" name="savepoint" x="448" y="172"/>
+  <object id="18" gid="96" x="960" y="280" width="180" height="268"/>
+  <object id="19" gid="117" x="1060" y="396" width="92" height="38"/>
+  <object id="20" gid="116" x="1018" y="370" width="178" height="182"/>
+  <object id="24" name="interactable" x="960" y="0" width="200" height="280">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's a highly climbable looking tree.)"/>
+   </properties>
+  </object>
+  <object id="25" name="interactable" x="120" y="80" width="80" height="120">
+   <properties>
+    <property name="text1" value="* (The fridge is packed with festive foods.)"/>
+    <property name="text2" value="* (...[wait:5]and a jar of pickles.)"/>
+   </properties>
+  </object>
+  <object id="26" gid="90" x="98" y="64" width="56" height="32"/>
+  <object id="27" name="interactable" x="200" y="120" width="80" height="80">
+   <properties>
+    <property name="text1" value="* (The sink is sparkling clean.)"/>
+   </properties>
+  </object>
+  <object id="28" name="interactable" x="280" y="40" width="80" height="160">
+   <properties>
+    <property name="text1" value="* (New stovetop,[wait:5] ancient katana.)"/>
+   </properties>
+  </object>
+  <object id="29" name="interactable" x="360" y="80" width="44.6667" height="120">
+   <properties>
+    <property name="text1">* (In the cupboard are...[wait:10]
+cutters for gingerbread monsters.)</property>
+   </properties>
+  </object>
+  <object id="31" name="transition" x="160" y="480" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.2"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/noellehouse/noehouse"/>
+    <property name="marker" value="entrykitchen"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="35" name="interactable" x="1030" y="326" width="150.5" height="24.5">
+   <properties>
+    <property name="cutscene" value="hometown.otherpiano"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="32" name="spawn" x="440" y="240">
+   <point/>
+  </object>
+  <object id="33" name="entry" x="200" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="objects_deco">
+  <object id="34" gid="125" x="650" y="198" width="200" height="46"/>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="4" name="collision">
+  <object id="2" x="286.5" y="262" width="242.5" height="77"/>
+  <object id="3" x="480" y="120" width="49" height="142"/>
+  <object id="4" x="240" y="400" width="1040" height="80"/>
+  <object id="5" x="1200" y="0" width="80" height="400"/>
+  <object id="6" x="405.5" y="0" width="794.5" height="144.667"/>
+  <object id="7" x="80" y="0" width="326" height="200"/>
+  <object id="8" x="80" y="264" width="80" height="73.3333"/>
+  <object id="9" x="40" y="0" width="40" height="400"/>
+  <object id="10" x="80" y="400" width="80" height="80"/>
+  <object id="11" x="609" y="196" width="280" height="120"/>
+  <object id="12" x="650" y="302" width="40" height="56.5"/>
+  <object id="13" x="730.667" y="302" width="38.3333" height="56.5"/>
+  <object id="14" x="810" y="302" width="40" height="56.5"/>
+  <object id="15" x="650" y="180" width="40" height="20"/>
+  <object id="16" x="730" y="180" width="40" height="20"/>
+  <object id="17" x="810" y="180" width="40" height="20"/>
+  <object id="22" x="1060.67" y="360.667" width="89.3333" height="38.6667"/>
+  <object id="37" x="1016" y="186" width="184" height="174"/>
+ </objectgroup>
+</map>

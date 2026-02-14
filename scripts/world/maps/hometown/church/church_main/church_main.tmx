@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="27">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="inside" type="bool" value="true"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="church_lw"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <imagelayer id="2" name="bg">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/church/church_main.png" width="1280" height="480"/>
+ </imagelayer>
+ <imagelayer id="3" name="deco">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/church/church_main_deco.png" width="1280" height="480"/>
+ </imagelayer>
+ <objectgroup color="#ff00ff" id="4" name="objects_deco">
+  <object id="1" gid="126" x="728" y="268" width="106" height="74"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="6" name="objects">
+  <object id="2" name="interactable" x="728" y="192" width="106" height="74">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's an alter full of hope candles.[wait:5] Each one has a person's name on it.)"/>
+    <property name="text2">* (&quot;Asriel&quot;...[wait:5] &quot;Asgore&quot;...
+[wait:5]&quot;Kris&quot;...[wait:5] your mother must have lit those ones.)</property>
+   </properties>
+  </object>
+  <object id="16" name="interactable" x="996" y="166" width="42" height="74">
+   <properties>
+    <property name="text1" value="* (It's a fire extinguisher.)"/>
+   </properties>
+  </object>
+  <object id="3" name="transition" x="600" y="480" width="80" height="40">
+   <properties>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/town_church"/>
+    <property name="marker" value="entrychurch"/>
+   </properties>
+  </object>
+  <object id="17" name="interactable" x="180" y="144" width="120" height="124">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's a bookshelf full of hymnals and scripture.)"/>
+    <property name="text2" value="* (...[wait:10] and some copies of Lord of the Hammer.)"/>
+   </properties>
+  </object>
+  <object id="19" name="transition" x="360" y="200" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.2"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="up"/>
+    <property name="map" value="hometown/church/piano_room"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="23" name="transition" x="840" y="200" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.2"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="up"/>
+    <property name="map" value="hometown/church/alvin_office"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="26" name="transition" x="600" y="160" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.2"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="up"/>
+    <property name="map" value="hometown/church/hymnal_room"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="8" name="markers">
+  <object id="18" name="spawn" x="640" y="420">
+   <point/>
+  </object>
+  <object id="22" name="entrypiano" x="400" y="280">
+   <point/>
+  </object>
+  <object id="24" name="entryalvin" x="880" y="280">
+   <point/>
+  </object>
+  <object id="25" name="entryhymnal" x="640" y="240">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="7" name="collision">
+  <object id="4" x="560" y="360" width="40" height="120"/>
+  <object id="5" x="160" y="360" width="400" height="40"/>
+  <object id="6" x="120" y="80" width="40" height="280"/>
+  <object id="7" x="160" y="40" width="200" height="200"/>
+  <object id="8" x="440" y="40" width="120" height="200"/>
+  <object id="9" x="720" y="40" width="120" height="200"/>
+  <object id="10" x="920" y="40" width="200" height="200"/>
+  <object id="11" x="1120" y="80" width="40" height="280"/>
+  <object id="12" x="680" y="360" width="440" height="40"/>
+  <object id="13" x="680" y="400" width="40" height="80"/>
+  <object id="14" x="560" y="80" width="40" height="120"/>
+  <object id="15" x="680" y="80" width="40" height="120"/>
+ </objectgroup>
+ <imagelayer id="5" name="fg">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/church/church_main_fg.png" width="1280" height="480"/>
+ </imagelayer>
+</map>

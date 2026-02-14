@@ -1,0 +1,460 @@
+return {
+  version = "1.11",
+  luaversion = "5.1",
+  tiledversion = "1.11.2",
+  class = "",
+  orientation = "orthogonal",
+  renderorder = "right-down",
+  width = 16,
+  height = 12,
+  tilewidth = 40,
+  tileheight = 40,
+  nextlayerid = 8,
+  nextobjectid = 23,
+  properties = {
+    ["border"] = "leaves",
+    ["inside"] = true,
+    ["light"] = true,
+    ["music"] = "church_lw"
+  },
+  tilesets = {
+    {
+      name = "hometownobjects",
+      firstgid = 1,
+      filename = "../../../../tilesets/hometownobjects.tsx",
+      exportfilename = "../../../../tilesets/hometownobjects.lua"
+    }
+  },
+  layers = {
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 16,
+      height = 12,
+      id = 1,
+      name = "Tile Layer 1",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "imagelayer",
+      image = "../../../../../../assets/sprites/world/maps/hometown/interior/church/alvin_office.png",
+      id = 2,
+      name = "bg",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      repeatx = false,
+      repeaty = false,
+      properties = {}
+    },
+    {
+      type = "imagelayer",
+      image = "../../../../../../assets/sprites/world/maps/hometown/interior/church/alvin_office_deco.png",
+      id = 3,
+      name = "deco",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      repeatx = false,
+      repeaty = false,
+      properties = {}
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 7,
+      name = "markers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 19,
+          name = "spawn",
+          type = "",
+          shape = "point",
+          x = 320,
+          y = 440,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 5,
+      name = "objects_deco",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 6,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 400,
+          width = 62,
+          height = 126,
+          rotation = 0,
+          gid = 127,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 7,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 358,
+          y = 358,
+          width = 42,
+          height = 132,
+          rotation = 0,
+          gid = 128,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 8,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 174,
+          y = 288,
+          width = 142,
+          height = 124,
+          rotation = 0,
+          gid = 130,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 9,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 164,
+          y = 400,
+          width = 118,
+          height = 60,
+          rotation = 0,
+          gid = 129,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 4,
+      name = "objects",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 1,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 120,
+          width = 80,
+          height = 115,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["solid"] = true,
+            ["text1"] = "* (Books.[wait:5] Many copies of Lord of the hammer...[wait:5] and some unlabeled notebooks.)"
+          }
+        },
+        {
+          id = 2,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 279.5,
+          width = 57,
+          height = 120.5,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["solid"] = true,
+            ["text1"] = "* (Documents...)"
+          }
+        },
+        {
+          id = 3,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 240.667,
+          width = 40,
+          height = 69.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["solid"] = true,
+            ["text1"] = "* (Juice,[wait:5] and wafer-like crackers.)"
+          }
+        },
+        {
+          id = 4,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 342,
+          y = 58,
+          width = 40,
+          height = 142,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* (Seems to be some sort of incense container.)"
+          }
+        },
+        {
+          id = 5,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 250,
+          y = 54.6667,
+          width = 73.3333,
+          height = 145.333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* (It's a plaque bearing the words of a famous writer.)",
+            ["text2"] = "* (You probably don't have time to read this...)"
+          }
+        },
+        {
+          id = 18,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 164.5,
+          y = 340,
+          width = 118,
+          height = 58.5,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["solid"] = true,
+            ["text1"] = "* (It's a large pitcher of water.)",
+            ["text2"] = "* (Cups are stored below it.)"
+          }
+        },
+        {
+          id = 20,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 280,
+          y = 480,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["exit_delay"] = 0.2,
+            ["exit_sound"] = "doorclose",
+            ["facing"] = "down",
+            ["map"] = "hometown/church/church_main",
+            ["marker"] = "entryalvin",
+            ["sound"] = "dooropen"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 6,
+      name = "collision",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 10,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 40,
+          width = 320,
+          height = 160,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 11,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 400,
+          y = 40,
+          width = 40,
+          height = 360,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 12,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 400,
+          width = 40,
+          height = 80,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 13,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 400,
+          y = 400,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 14,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 80,
+          y = 400,
+          width = 200,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 15,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 240,
+          y = 440,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 16,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 40,
+          y = 40,
+          width = 40,
+          height = 400,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 17,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 176.5,
+          y = 232.667,
+          width = 137.833,
+          height = 56,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 22,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 310.75,
+          width = 40,
+          height = 49.25,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    }
+  }
+}

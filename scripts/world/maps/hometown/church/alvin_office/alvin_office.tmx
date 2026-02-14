@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="23">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="inside" type="bool" value="true"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="church_lw"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <imagelayer id="2" name="bg">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/church/alvin_office.png" width="640" height="480"/>
+ </imagelayer>
+ <imagelayer id="3" name="deco">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/church/alvin_office_deco.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#ff00ff" id="7" name="markers">
+  <object id="19" name="spawn" x="320" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="objects_deco">
+  <object id="6" gid="127" x="80" y="400" width="62" height="126"/>
+  <object id="7" gid="128" x="358" y="358" width="42" height="132"/>
+  <object id="8" gid="130" x="174" y="288" width="142" height="124"/>
+  <object id="9" gid="129" x="164" y="400" width="118" height="60"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="1" name="interactable" x="80" y="120" width="80" height="115">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (Books.[wait:5] Many copies of Lord of the hammer...[wait:5] and some unlabeled notebooks.)"/>
+   </properties>
+  </object>
+  <object id="2" name="interactable" x="80" y="279.5" width="57" height="120.5">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (Documents...)"/>
+   </properties>
+  </object>
+  <object id="3" name="interactable" x="360" y="240.667" width="40" height="69.3333">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (Juice,[wait:5] and wafer-like crackers.)"/>
+   </properties>
+  </object>
+  <object id="4" name="interactable" x="342" y="58" width="40" height="142">
+   <properties>
+    <property name="text1" value="* (Seems to be some sort of incense container.)"/>
+   </properties>
+  </object>
+  <object id="5" name="interactable" x="250" y="54.6667" width="73.3333" height="145.333">
+   <properties>
+    <property name="text1" value="* (It's a plaque bearing the words of a famous writer.)"/>
+    <property name="text2" value="* (You probably don't have time to read this...)"/>
+   </properties>
+  </object>
+  <object id="18" name="interactable" x="164.5" y="340" width="118" height="58.5">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's a large pitcher of water.)"/>
+    <property name="text2" value="* (Cups are stored below it.)"/>
+   </properties>
+  </object>
+  <object id="20" name="transition" x="280" y="480" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.2"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/church/church_main"/>
+    <property name="marker" value="entryalvin"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="6" name="collision">
+  <object id="10" x="80" y="40" width="320" height="160"/>
+  <object id="11" x="400" y="40" width="40" height="360"/>
+  <object id="12" x="360" y="400" width="40" height="80"/>
+  <object id="13" x="400" y="400" width="40" height="40"/>
+  <object id="14" x="80" y="400" width="200" height="40"/>
+  <object id="15" x="240" y="440" width="40" height="40"/>
+  <object id="16" x="40" y="40" width="40" height="400"/>
+  <object id="17" x="176.5" y="232.667" width="137.833" height="56"/>
+  <object id="22" x="360" y="310.75" width="40" height="49.25"/>
+ </objectgroup>
+</map>
