@@ -32,6 +32,7 @@ return {
             cutscene:walkTo(kris, x+40, y-40, 1, "down", true)
             cutscene:walkTo(susie, x+110, y+40, 1, "left", true)
 
+
             cutscene:wait(0.5)
             cutscene:setSpeaker(susie)
             cutscene:text("* .[wait:1].[wait:1].[wait:1] a[wait:1]a[wait:1]a[wait:1]nd that should be it.", "small_smile")
@@ -55,8 +56,8 @@ return {
             
             cutscene:setSpeaker(susie)
             cutscene:wait(cutscene:text("* Mhm.[wait:1] Now get over here and park your butt.", "small_smile"))
-            
             cutscene:wait(cutscene:walkTo(ralsei, x-160, y+60, 1, "up", true))
+
             susie:resetSprite()
             cutscene:wait(cutscene:walkTo(ralsei, x+20, y+60, 2, "right", true))
             cutscene:wait(cutscene:walkTo(ralsei, x+20, y+60, 0, "up", true))
@@ -112,6 +113,7 @@ return {
             susie:setSprite("chair_left_hold_shock")
             cutscene:wait(cutscene:text("* ...[wait:4] wait.", "shock"))
             cutscene:wait(cutscene:text("* Wait, wait, WAIT!!", "shock_nervous"))
+            ralsei:setSprite("chair_right_sad")
             Assets.playSound("noise")
             susie:resetSprite()
             kris:setSprite("walk/right_1")
@@ -120,14 +122,75 @@ return {
             cutscene:wait(0.3)
             kris:setSprite(nil)
             susie:setAnimation("shake")
-            repeat
-                Assets.playSound("noise")
-                cutscene:wait(0.2)
-            until 
+            -- repeat
+            --     Assets.playSound("noise")
+            --     cutscene:wait(0.2)
+            -- until 
             cutscene:setSpeaker(susie)
-            cutscene:wait(cutscene:text("* KRIS!! [wait:3]WE ONLY HAVE ONE DAY TO FINISH THE PROJECT!!"))
+            cutscene:wait(cutscene:text("* KRIS!! [wait:3]WE ONLY HAVE ONE DAY TO FINISH THE PROJECT!!", "surprise_frown"))
+            cutscene:wait(1)
             susie.sprite:pause()
-            
+
+            cutscene:wait(1)
+            cutscene:wait(cutscene:text("* Dude...[wait:5] Alphys is gonna be pissed.", "annoyed_down"))
+
+            cutscene:wait(2)
+            susie:setSprite("walk_unhappy/down_1")
+            kris:setSprite("walk/down_1")
+            cutscene:setSpeaker(ralsei)
+            cutscene:wait(cutscene:text("* You haven't finished your homework yet?!", "shock"))
+            cutscene:wait(1)
+            ralsei:setSprite("chair_right_sit")
+            cutscene:wait(cutscene:text("* Well...[wait:5] there's no need to panic.", "small_smile"))
+            cutscene:wait(cutscene:text("* You still have the whole day, right?", "small_smile_side_b"))
+
+            cutscene:wait(2)
+            cutscene:setSpeaker(susie)
+            cutscene:wait(cutscene:text("* Yeah, I guess...", "annoyed_down_b"))
+
+            cutscene:wait(2)
+            Assets.playSound("sussurprise", 30)
+            susie:setSprite("scared_left")
+            cutscene:wait(1)
+            ralsei:setSprite("chair_right_sad")
+            cutscene:setSpeaker(ralsei)
+            cutscene:wait(cutscene:text("* Susie...?[wait:5] What is it?", "surprise_neutral_side"))
+
+            kris:setSprite(nil)
+            susie:setAnimation("shake")
+            cutscene:setSpeaker(susie)
+            cutscene:wait(cutscene:text("* TODAY'S THE FESTIVAL!!", "surprise_frown"))
+            cutscene:wait(0.5)
+            susie.sprite:pause()
+            cutscene:wait(1)
+
+            susie:setSprite("walk_unhappy/down_1")
+            kris:setSprite("walk/down_1")
+            cutscene:setSpeaker(ralsei)
+            cutscene:wait(cutscene:text("* It's okay, Susie...", "pleased"))
+            ralsei:setSprite("chair_right_sad_b")
+            cutscene:wait(cutscene:text("* I can't really...[wait:5] help you with your projects...", "sad_smile", ralsei, {["x"]=2, ["y"]=2}))
+            cutscene:wait(1)
+            ralsei:setSprite("chair_right_sit")
+            cutscene:wait(cutscene:text("* But both of you should get it done before the festival!", "small_smile_side"))
+            cutscene:wait(cutscene:text("* And...[wait:5] if...[wait:5] you have some time left, you can...", "blush_shy"))
+            ralsei:setSprite("chair_right_smile")
+            cutscene:wait(cutscene:text("* Come back and hang out...[wait:5] if you want!", "blush_smile"))
+
+            cutscene:wait(2)
+            susie:setSprite("walk/down_1")
+            cutscene:setSpeaker(susie)
+            cutscene:wait(cutscene:text("* Yeah, you're right. We should get it done like...[wait:5] right now.", "nervous_side"))
+            susie:setSprite("walk/left_1")
+            kris:setSprite("walk/right_1")
+            ralsei:setSprite("chair_right_sit")
+            cutscene:wait(cutscene:text("* Come on Kris, let's finish that damn project.", "smile"))
+            susie:resetSprite()
+            cutscene:wait(cutscene:walkTo(susie, x+30, y-20, 0.3))
+            cutscene:wait(cutscene:walkTo(susie, x+180, y-20, 1.5))
+            cutscene:wait(cutscene:walkTo(susie, x+180, y+90, 1))
+            cutscene:wait(cutscene:walkTo(susie, x-160, y+90, 1.5, "up"))
+            cutscene:text("* Hurry up! ")
         end
 
     end,

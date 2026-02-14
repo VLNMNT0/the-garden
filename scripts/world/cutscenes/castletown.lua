@@ -88,6 +88,7 @@ return {
         --     cutscene:text("* That was kinda cool.", "small_smile")
         --     cutscene:wait(1)
         --     susie:setSprite("embarrased-right")
+        --     Assets.playSound("whip-hard")
         --     cutscene:text("* DON'T SAY THAT,[wait:1] DUMBASS!!", "teeth_b")
         --     susie:resetSprite()
         --     cutscene:wait(2)
