@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="37">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="inside" type="bool" value="true"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="distant"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <imagelayer id="2" name="bg">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/noellehouse/dessroom.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup id="3" name="objects_deco">
+  <object id="6" gid="82" x="132" y="94" width="56" height="32"/>
+  <object id="7" gid="83" x="78" y="268" width="170" height="208"/>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="4" name="collision">
+  <object id="8" x="80" y="40" width="480" height="160"/>
+  <object id="9" x="40" y="80" width="40" height="320"/>
+  <object id="10" x="80" y="400" width="210.25" height="40"/>
+  <object id="11" x="240" y="440" width="50" height="40.6667"/>
+  <object id="12" x="370" y="400" width="200" height="40"/>
+  <object id="13" x="369.97" y="439.939" width="40.7273" height="40.7273"/>
+  <object id="14" x="560" y="80" width="40" height="320"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="34" name="spawn" x="330" y="460">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="6" name="objects">
+  <object id="23" gid="84" x="372" y="400" width="116" height="64"/>
+  <object id="24" gid="85" x="86" y="400" width="156" height="100"/>
+  <object id="25" gid="86" x="497.75" y="400.25" width="58" height="50"/>
+  <object id="26" gid="87" x="516" y="348" width="48" height="136"/>
+  <object id="27" name="interactable" x="520" y="200" width="40" height="160">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (Rollerblades,[wait:5] wifle bat.)"/>
+   </properties>
+  </object>
+  <object id="28" name="interactable" x="503" y="356" width="57" height="44">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's a box of odds-and-ends.)"/>
+   </properties>
+  </object>
+  <object id="29" name="interactable" x="377" y="353" width="102" height="46">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's a CD player.)"/>
+   </properties>
+  </object>
+  <object id="30" name="interactable" x="80" y="305" width="44" height="92">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's a shelf for games and movies.)"/>
+   </properties>
+  </object>
+  <object id="31" name="interactable" x="120" y="360" width="120" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1">* (It's a computer.)[wait:10]
+* (The monitor is unplugged.)</property>
+   </properties>
+  </object>
+  <object id="32" name="interactable" x="94" y="152" width="139" height="90">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's Dess's bed.)"/>
+    <property name="text2" value="* (Underneath are army rations,[wait:5] guitar picks,[wait:5] paintball gear,[wait:5] ice skates...)"/>
+    <property name="text3" value="* (...[wait:10]and a badly traced drawing of a dragon.)"/>
+   </properties>
+  </object>
+  <object id="33" name="interactable" x="255" y="69" width="262" height="132.5">
+   <properties>
+    <property name="text1" value="* (It's an oversized walk-in closet.)"/>
+    <property name="text2" value="* (It's covered in band posters,[wait:5] and some handmade posters...)"/>
+    <property name="text3" value="* (...[wait:10]for shows that may or may not have ever happened.)"/>
+   </properties>
+  </object>
+  <object id="36" name="transition" x="286" y="480" width="89" height="40">
+   <properties>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/noellehouse/noehouse"/>
+    <property name="marker" value="entrydess"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
