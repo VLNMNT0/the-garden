@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 8,
-  nextobjectid = 27,
+  nextobjectid = 29,
   properties = {
     ["border"] = "leaves",
     ["inside"] = true,

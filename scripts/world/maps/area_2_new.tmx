@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="38" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="21" nextobjectid="158">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="38" height="40" tilewidth="40" tileheight="40" infinite="0" nextlayerid="21" nextobjectid="161">
  <editorsettings>
-  <export target="area_2_new.lua" format="lua"/>
+  <export target="area_2_new/data.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="inside" type="bool" value="true"/>
@@ -325,7 +325,7 @@
  <objectgroup id="19" name="objects_2">
   <object id="134" name="savepoint" x="835" y="290" width="40" height="40"/>
  </objectgroup>
- <objectgroup color="#ff00ff" id="15" name="markers">
+ <objectgroup color="#aa00ff" id="15" name="markers">
   <object id="28" name="entry" x="760" y="1560">
    <point/>
   </object>
@@ -445,6 +445,17 @@
   <object id="154" gid="380" x="-160" y="1090" width="640" height="150"/>
   <object id="155" gid="381" x="1040" y="1130" width="640" height="150"/>
   <object id="156" gid="381" x="1040" y="1090" width="640" height="150"/>
+  <object id="159" name="script" x="641.333" y="1314.67" width="238.667" height="41.3333">
+   <properties>
+    <property name="cutscene" value="castle_entrance.susie_leaving"/>
+   </properties>
+  </object>
+  <object id="160" name="script" x="722.667" y="260" width="81.3333" height="21.3333">
+   <properties>
+    <property name="cutscene" value="castle_exit.check_susie"/>
+    <property name="once" type="bool" value="false"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="3" name="objects_props">
   <object id="1" gid="318" x="736" y="128" width="46" height="128"/>

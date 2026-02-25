@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 46,
+  nextobjectid = 47,
   properties = {
     ["border"] = "leaves",
     ["inside"] = true,
@@ -625,6 +625,21 @@ return {
           visible = true,
           properties = {
             ["text"] = "* (The locker is covered in Jockington memorabilia.)"
+          }
+        },
+        {
+          id = 46,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 881,
+          y = 35,
+          width = 119,
+          height = 20,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "hometown.studychoice"
           }
         }
       }

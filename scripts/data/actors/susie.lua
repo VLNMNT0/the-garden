@@ -8,8 +8,8 @@ function susie:init()
         ["shake"] = {"sus_kris_shake", 1/5, true}
     }
 
-    self.offset = {
-        ["shake"] = {-2, 2}
+    self.offsets = {
+        ["sus_kris_shake"] = {-12, 2}
     }
 end
 

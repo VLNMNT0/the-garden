@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="47" height="21" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="46">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="47" height="21" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="47">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -144,6 +144,11 @@
   <object id="44" name="interactable" x="480" y="400" width="40" height="40">
    <properties>
     <property name="text" value="* (The locker is covered in Jockington memorabilia.)"/>
+   </properties>
+  </object>
+  <object id="46" name="script" x="881" y="35" width="119" height="20">
+   <properties>
+    <property name="cutscene" value="hometown.studychoice"/>
    </properties>
   </object>
  </objectgroup>

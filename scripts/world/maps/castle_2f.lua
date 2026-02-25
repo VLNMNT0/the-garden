@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 12,
-  nextobjectid = 55,
+  nextobjectid = 57,
   backgroundcolor = { 0, 0, 0 },
   properties = {
     ["inside"] = true,
@@ -477,6 +477,21 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "kris_room.transition_k"
+          }
+        },
+        {
+          id = 55,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 81.5,
+          y = 430,
+          width = 117,
+          height = 20,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "hall.not_awake"
           }
         }
       }

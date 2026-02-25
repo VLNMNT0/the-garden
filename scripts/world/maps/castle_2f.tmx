@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="12" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextlayerid="12" nextobjectid="55">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="12" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextlayerid="12" nextobjectid="57">
  <editorsettings>
   <export target="castle_2f.lua" format="lua"/>
  </editorsettings>
@@ -95,6 +95,11 @@
   <object id="54" name="script" x="530.364" y="267.273" width="68.9091" height="3.45455">
    <properties>
     <property name="cutscene" value="kris_room.transition_k"/>
+   </properties>
+  </object>
+  <object id="55" name="script" x="81.5" y="430" width="117" height="20">
+   <properties>
+    <property name="cutscene" value="hall.not_awake"/>
    </properties>
   </object>
  </objectgroup>

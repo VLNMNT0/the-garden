@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 126,
+  tilecount = 130,
   tiles = {
     {
       id = 1,
@@ -789,6 +789,30 @@ return {
       id = 133,
       image = "../../../assets/sprites/tilesets/objects/church_table.png",
       width = 276,
+      height = 100
+    },
+    {
+      id = 134,
+      image = "../../../assets/sprites/tilesets/objects/susie_bed.png",
+      width = 82,
+      height = 137
+    },
+    {
+      id = 135,
+      image = "../../../assets/sprites/tilesets/objects/susie_chair.png",
+      width = 62,
+      height = 74
+    },
+    {
+      id = 136,
+      image = "../../../assets/sprites/tilesets/objects/susie_backpack.png",
+      width = 32,
+      height = 38
+    },
+    {
+      id = 137,
+      image = "../../../assets/sprites/tilesets/objects/susie_table.png",
+      width = 60,
       height = 100
     }
   }

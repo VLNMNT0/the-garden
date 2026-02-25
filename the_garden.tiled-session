@@ -3,38 +3,27 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "scripts/world/maps/castle_room_kris_susie.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
-        "scripts/world/maps",
+        "scripts/world/maps/hometown/noellehouse/desroom",
         "scripts/world/maps/hometown/church/church_main",
+        "scripts/world/maps/hometown/torielhouse/kris_room",
+        "scripts/world/maps/tv",
+        "scripts/world/maps/hometown/church/alvin_office",
+        "scripts/world/maps",
+        "scripts/world/maps/hometown/torielhouse/toriel_hallway",
+        "scripts/world/maps/hometown/torielhouse/tor_house",
+        "scripts/world/maps/hometown/noellehouse/noehouse",
+        "scripts/world/maps/hometown",
+        "scripts/world",
+        "scripts/world/maps/hometown/torielhouse/toriel_bathroom",
+        "scripts/world/maps/hometown/noellehouse/noeroom",
+        "scripts/world/maps/hometown/church/hymnal_room",
+        "scripts/world/tilesets",
+        "scripts/world/maps/hometown/church/piano_room",
         "scripts/world/maps/hometown/noellehouse/noebathroom",
         "scripts/world/maps/hometown/noellehouse/closet",
-        "scripts/world/maps/hometown/school/school_lobby",
-        "scripts/world/maps/hometown/torielhouse/kris_room",
-        "scripts/world/maps/hometown/torielhouse/toriel_bathroom",
-        "scripts/world/maps/tv",
-        "scripts/world/maps/hometown/krisyard",
-        "scripts/world/maps/hometown/noellehouse",
-        "scripts/world/maps/hometown/church/hymnal_room",
-        "scripts/world/maps/hometown/noellehouse/noekitchen",
-        "scripts/world/maps/hometown/church/alvin_office",
-        "scripts/world/maps/hometown/school/school_door",
-        "scripts/world/maps/hometown/torielhouse/tor_house",
-        "scripts/world/maps/hometown/church/piano_room",
-        "scripts/world/maps/hometown/noellehouse/noeroom",
-        "scripts/world",
-        "scripts/world/maps/hometown/noelleyard",
-        "scripts/world/maps/hometown/town_north",
-        "scripts/world/maps/hometown/town_beach",
-        "scripts/world/maps/hometown/noellehouse/desroom",
-        "scripts/world/maps/hometown/torielhouse",
-        "scripts/world/maps/hometown/church",
-        "scripts/world/maps/hometown/torielhouse/toriel_hallway",
-        "scripts/world/maps/hometown/noellehouse/noehouse",
-        "scripts/world/maps/hometown/town_mid",
-        "scripts/world/maps/hometown/town_church",
-        "scripts/world/tilesets",
-        "scripts/world/maps/hometown/school"
+        "scripts/world/maps/hometown/noellehouse/noekitchen"
     ],
     "file.lastUsedOpenFilter": "Todos los archivos (*)",
     "fileStates": {
@@ -213,45 +202,46 @@
             "scale": 0.9678125,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 320.3099773974815,
+                "x": 320.3099773974814,
                 "y": 239.7158540523087
             }
         },
         "scripts/world/maps/area_1_light.tmx": {
             "expandedObjectLayers": [
+                5,
                 6
             ],
             "scale": 0.9678125,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 456.7000322893122,
+                "x": 360.6070390700678,
                 "y": 221.11721020342267
             }
         },
         "scripts/world/maps/area_2.tmx": {
             "expandedObjectLayers": [
+                14,
                 16,
-                5,
-                14
+                5
             ],
-            "scale": 0.5,
+            "scale": 0.25,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 980,
-                "y": 1466
+                "x": 1040,
+                "y": 568
             }
         },
         "scripts/world/maps/area_2_new.tmx": {
             "expandedObjectLayers": [
                 16,
-                19,
-                15
+                15,
+                19
             ],
-            "scale": 1,
+            "scale": 0.75,
             "selectedLayer": 10,
             "viewCenter": {
-                "x": 936,
-                "y": 761
+                "x": 769.3333333333333,
+                "y": 1667.9999999999998
             }
         },
         "scripts/world/maps/area_2_old.tmx": {
@@ -267,41 +257,42 @@
         },
         "scripts/world/maps/castle_1f.tmx": {
             "expandedObjectLayers": [
-                9
+                9,
+                10
             ],
             "scale": 0.75,
-            "selectedLayer": 3,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 1008,
+                "x": 636,
                 "y": 309.3333333333333
             }
         },
         "scripts/world/maps/castle_2f.tmx": {
             "expandedObjectLayers": [
-                5,
+                7,
                 6,
-                8,
-                7
+                5,
+                8
             ],
-            "scale": 2,
+            "scale": 1,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 535.5,
-                "y": 282
+                "x": 247,
+                "y": 439
             }
         },
         "scripts/world/maps/castle_3f.tmx": {
             "expandedObjectLayers": [
-                5,
-                6,
                 4,
+                6,
+                5,
                 7
             ],
             "scale": 2,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 469.5,
-                "y": 242.5
+                "x": 1056.75,
+                "y": 240
             }
         },
         "scripts/world/maps/castle_bakery.tmx": {
@@ -358,27 +349,27 @@
             "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 374.66666666666663,
-                "y": 300
+                "x": 409.99999999999994,
+                "y": 238.66666666666666
             }
         },
         "scripts/world/maps/castle_room_kris_susie.tmx": {
             "expandedObjectLayers": [
-                4,
-                9
+                9,
+                4
             ],
-            "scale": 0.5,
+            "scale": 1.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 556,
-                "y": 254
+                "x": 757.3333333333333,
+                "y": 233.33333333333331
             }
         },
         "scripts/world/maps/castle_room_lancer.tmx": {
             "scale": 0.9678125,
-            "selectedLayer": 0,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 320.3099773974815,
+                "x": 320.3099773974814,
                 "y": 239.7158540523087
             }
         },
@@ -399,14 +390,14 @@
         "scripts/world/maps/castle_room_ralsei.tmx": {
             "expandedObjectLayers": [
                 5,
-                6,
-                4
+                4,
+                6
             ],
-            "scale": 1,
-            "selectedLayer": 4,
+            "scale": 0.75,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": 319,
-                "y": 669
+                "x": 256.6666666666667,
+                "y": 320
             }
         },
         "scripts/world/maps/castle_room_susie.tmx": {
@@ -424,8 +415,8 @@
             "scale": 0.33,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 893.9393939393939,
-                "y": 218.18181818181813
+                "x": 562.1212121212121,
+                "y": 239.39393939393938
             }
         },
         "scripts/world/maps/castle_room_tenna.tmx": {
@@ -477,6 +468,14 @@
             "viewCenter": {
                 "x": 320.3099773974815,
                 "y": 266.58056183403295
+            }
+        },
+        "scripts/world/maps/hometown/apartments/apartments.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 175.99999999999997,
+                "y": 466.66666666666663
             }
         },
         "scripts/world/maps/hometown/church/alvin_office/alvin_office.tmx": {
@@ -557,14 +556,13 @@
                 15
             ],
             "expandedObjectLayers": [
-                7,
-                16
+                7
             ],
-            "scale": 0.25,
+            "scale": 0.33,
             "selectedLayer": 12,
             "viewCenter": {
-                "x": 476,
-                "y": 2760
+                "x": 168.18181818181813,
+                "y": 2196.969696969697
             }
         },
         "scripts/world/maps/hometown/noellehouse/closet/closet.tmx": {
@@ -674,15 +672,15 @@
         },
         "scripts/world/maps/hometown/school/school_door/school_door.tmx": {
             "expandedObjectLayers": [
-                7,
+                5,
                 4,
-                5
+                7
             ],
-            "scale": 1,
+            "scale": 0.75,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 751,
-                "y": 245
+                "x": 346,
+                "y": 217.33333333333331
             }
         },
         "scripts/world/maps/hometown/school/school_lobby/school_lobby.tmx": {
@@ -690,11 +688,11 @@
                 5,
                 8
             ],
-            "scale": 1.5,
-            "selectedLayer": 4,
+            "scale": 0.33,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 730,
-                "y": 404
+                "x": 568.1818181818181,
+                "y": 481.81818181818187
             }
         },
         "scripts/world/maps/hometown/school/toriel_class/toriel_class.tmx": {
@@ -713,16 +711,29 @@
                 "y": 239.7158540523087
             }
         },
+        "scripts/world/maps/hometown/susiehouse/susie_room/susie_room.tmx": {
+            "expandedObjectLayers": [
+                5,
+                3,
+                4
+            ],
+            "scale": 1,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 359.5,
+                "y": 146
+            }
+        },
         "scripts/world/maps/hometown/torielhouse/kris_room/kris_room.tmx": {
             "expandedObjectLayers": [
-                4,
-                5
+                5,
+                4
             ],
-            "scale": 1.5,
-            "selectedLayer": 0,
+            "scale": 1,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 430.66666666666663,
-                "y": 287.3333333333333
+                "x": 323.5,
+                "y": 251
             }
         },
         "scripts/world/maps/hometown/torielhouse/tor_house/tor_house.tmx": {
@@ -754,8 +765,8 @@
             "scale": 1.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 540,
-                "y": 287.3333333333333
+                "x": 540.3333333333333,
+                "y": 287.33333333333337
             }
         },
         "scripts/world/maps/hometown/town_beach/town_beach.tmx": {
@@ -795,11 +806,11 @@
                 21,
                 20
             ],
-            "scale": 0.5,
-            "selectedLayer": 10,
+            "scale": 0.33,
+            "selectedLayer": 9,
             "viewCenter": {
-                "x": 426,
-                "y": 470
+                "x": 1498.4848484848485,
+                "y": 396.96969696969694
             }
         },
         "scripts/world/maps/hometown/town_north/town_north.tmx": {
@@ -809,19 +820,27 @@
                 12
             ],
             "expandedObjectLayers": [
-                25,
-                49,
-                45,
-                46,
-                16,
                 51,
-                26
+                49,
+                26,
+                45,
+                16,
+                25,
+                46
             ],
-            "scale": 1.5,
+            "scale": 0.75,
             "selectedLayer": 26,
             "viewCenter": {
-                "x": 400.66666666666663,
-                "y": 108
+                "x": 2216,
+                "y": 298.66666666666663
+            }
+        },
+        "scripts/world/maps/hometown/town_school/town_school.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 11,
+            "viewCenter": {
+                "x": 800.6666666666666,
+                "y": 273.33333333333337
             }
         },
         "scripts/world/maps/hometown/town_south/town_south.tmx": {
@@ -958,7 +977,7 @@
         "scripts/world/tilesets/hometownobjects.tsx": {
             "dynamicWrapping": true,
             "scaleInDock": 0.0625,
-            "scaleInEditor": 0.06
+            "scaleInEditor": 0.12
         },
         "scripts/world/tilesets/school.tsx": {
             "dynamicWrapping": false,
@@ -971,12 +990,13 @@
         }
     },
     "frame.defaultDuration": 166,
-    "last.exportedFilePath": "C:/Users/Usuario/AppData/Roaming/LOVE/kristal/mods/hometown_recreation/scripts/world/maps/castle_room_ralsei",
+    "last.exportedFilePath": "C:/Users/Usuario/AppData/Roaming/LOVE/kristal/mods/the-garden/scripts/world/maps/hometown/susiehouse/susie_room",
     "last.externalTilesetPath": "C:/Users/Tanner/AppData/Roaming/kristal/mods/hometown_recreation/scripts/world/tilesets",
-    "last.imagePath": "C:/Users/Tanner/AppData/Roaming/kristal/mods/hometown_recreation/assets/sprites/world/castle_town",
+    "last.imagePath": "C:/Users/Usuario/AppData/Roaming/LOVE/kristal/mods/the-garden/assets/sprites/tilesets/objects",
     "lastUsedTilesetExportFilter": "Lua files (*.lua)",
     "loadedWorlds": [
-        "C:/Users/Usuario/AppData/Roaming/LOVE/kristal/mods/hometown_recreation/scripts/world/maps/hometown/hometown.world"
+        "C:/Users/Usuario/AppData/Roaming/LOVE/kristal/mods/hometown_recreation/scripts/world/maps/hometown/hometown.world",
+        "C:/Users/Usuario/AppData/Roaming/LOVE/kristal/mods/the-garden/scripts/world/maps/hometown/hometown.world"
     ],
     "map.height": 12,
     "map.lastUsedExportFilter": "Todos los archivos (*)",
@@ -985,28 +1005,22 @@
     "map.tileWidth": 40,
     "map.width": 16,
     "openFiles": [
-        "scripts/world/maps/castle_room_kris.tmx",
-        "scripts/world/maps/castle_room_kris_susie.tmx",
-        "scripts/world/maps/castle_2f.tmx",
-        "scripts/world/maps/castle_room_table.tmx",
-        "scripts/world/maps/castle_3f.tmx",
-        "scripts/world/maps/castle_room_ralsei.tmx"
     ],
-    "project": "hometown_recreation.tiled-project",
-    "property.type": "bool",
+    "project": "the_garden.tiled-project",
+    "property.type": "string",
     "recentFiles": [
-        "scripts/world/maps/castle_room_kris.tmx",
+        "scripts/world/maps/hometown/school/school_lobby/school_lobby.tmx",
+        "scripts/world/maps/hometown/torielhouse/toriel_hallway/toriel_hallway.tmx",
         "scripts/world/maps/castle_room_ralsei.tmx",
-        "scripts/world/maps/castle_3f.tmx",
-        "scripts/world/maps/castle_room_table.tmx",
-        "scripts/world/maps/castle_2f.tmx",
-        "scripts/world/maps/castle_room_kris_susie.tmx",
-        "scripts/world/maps/hometown/krisyard/krisyard.tmx",
-        "scripts/world/maps/hometown/church/alvin_office/alvin_office.tmx",
-        "scripts/world/maps/hometown/church/church_main/church_main.tmx",
-        "scripts/world/maps/hometown/church/hymnal_room/hymnal_room.tmx",
-        "scripts/world/maps/hometown/church/piano_room/piano_room.tmx",
-        "scripts/world/maps/hometown/noellehouse/closet/closet.tmx"
+        "scripts/world/maps/hometown/torielhouse/kris_room/kris_room.tmx",
+        "scripts/world/tilesets/hometownobjects.tsx",
+        "scripts/world/maps/hometown/school/school_door/school_door.tmx",
+        "scripts/world/maps/area_1_light.tmx",
+        "scripts/world/maps/hometown/town_north/town_north.tmx",
+        "scripts/world/maps/hometown/town_mid/town_mid.tmx",
+        "scripts/world/maps/hometown/apartments/apartments.tmx",
+        "scripts/world/maps/hometown/town_school/town_school.tmx",
+        "scripts/world/maps/castle_room_kris_susie.tmx"
     ],
     "resizeMap.removeObjects": false,
     "tileset.lastUsedFormat": "tsx",

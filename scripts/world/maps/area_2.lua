@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 22,
-  nextobjectid = 101,
+  nextobjectid = 104,
   backgroundcolor = { 0, 0, 0 },
   properties = {
     ["inside"] = true,
@@ -821,7 +821,7 @@ return {
           name = "entry",
           type = "",
           shape = "point",
-          x = 765,
+          x = 762,
           y = 1569,
           width = 0,
           height = 0,

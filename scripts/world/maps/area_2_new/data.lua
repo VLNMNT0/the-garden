@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 21,
-  nextobjectid = 160,
+  nextobjectid = 161,
   properties = {
     ["inside"] = true,
     ["music"] = "castletown",
@@ -20,19 +20,19 @@ return {
     {
       name = "castle_town",
       firstgid = 1,
-      filename = "../tilesets/castle_town.tsx"
+      filename = "../../tilesets/castle_town.tsx"
     },
     {
       name = "castle_town_bg",
       firstgid = 313,
-      filename = "../tilesets/castle_town_bg.tsx",
-      exportfilename = "../tilesets/castle_town_bg.lua"
+      filename = "../../tilesets/castle_town_bg.tsx",
+      exportfilename = "../../tilesets/castle_town_bg.lua"
     },
     {
       name = "castle_town_overlay",
       firstgid = 380,
-      filename = "../tilesets/castle_town_overlay.tsx",
-      exportfilename = "../tilesets/castle_town_overlay.lua"
+      filename = "../../tilesets/castle_town_overlay.tsx",
+      exportfilename = "../../tilesets/castle_town_overlay.lua"
     }
   },
   layers = {
@@ -338,7 +338,7 @@ return {
     },
     {
       type = "imagelayer",
-      image = "../../../assets/sprites/world/castle_town/castle.png",
+      image = "../../../../assets/sprites/world/castle_town/castle.png",
       id = 5,
       name = "castle",
       class = "",
@@ -1038,22 +1038,6 @@ return {
           properties = {}
         },
         {
-          id = 158,
-          name = "npc",
-          type = "",
-          shape = "point",
-          x = 760,
-          y = 1560,
-          width = 0,
-          height = 0,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "susie",
-            ["facing"] = "up"
-          }
-        },
-        {
           id = 159,
           name = "script",
           type = "",
@@ -1066,6 +1050,22 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "castle_entrance.susie_leaving"
+          }
+        },
+        {
+          id = 160,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 722.667,
+          y = 260,
+          width = 81.3333,
+          height = 21.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "castle_exit.check_susie",
+            ["once"] = false
           }
         }
       }

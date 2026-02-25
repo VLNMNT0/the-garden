@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 11,
-  nextobjectid = 37,
+  nextobjectid = 38,
   backgroundcolor = { 0, 0, 0 },
   properties = {
     ["inside"] = true,

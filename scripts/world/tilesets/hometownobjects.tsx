@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.11.2" name="hometownobjects" tilewidth="1128" tileheight="656" tilecount="126" columns="0">
+<tileset version="1.11" tiledversion="1.11.2" name="hometownobjects" tilewidth="1128" tileheight="656" tilecount="130" columns="0">
  <editorsettings>
   <export target="hometownobjects.lua" format="lua"/>
  </editorsettings>
@@ -385,5 +385,17 @@
  </tile>
  <tile id="133">
   <image source="../../../assets/sprites/tilesets/objects/church_table.png" width="276" height="100"/>
+ </tile>
+ <tile id="134">
+  <image source="../../../assets/sprites/tilesets/objects/susie_bed.png" width="82" height="137"/>
+ </tile>
+ <tile id="135">
+  <image source="../../../assets/sprites/tilesets/objects/susie_chair.png" width="62" height="74"/>
+ </tile>
+ <tile id="136">
+  <image source="../../../assets/sprites/tilesets/objects/susie_backpack.png" width="32" height="38"/>
+ </tile>
+ <tile id="137">
+  <image source="../../../assets/sprites/tilesets/objects/susie_table.png" width="60" height="100"/>
  </tile>
 </tileset>

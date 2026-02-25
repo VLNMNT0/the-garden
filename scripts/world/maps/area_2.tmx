@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="38" height="40" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextlayerid="22" nextobjectid="101">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="38" height="40" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextlayerid="22" nextobjectid="104">
  <editorsettings>
   <export target="area_2.lua" format="lua"/>
  </editorsettings>
@@ -207,7 +207,7 @@
   <object id="34" name="entry_castle" x="759" y="274">
    <point/>
   </object>
-  <object id="56" name="entry" x="765" y="1569">
+  <object id="56" name="entry" x="762" y="1569">
    <point/>
   </object>
   <object id="84" name="entry_w" x="45" y="1209">

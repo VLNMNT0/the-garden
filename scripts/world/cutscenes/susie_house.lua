@@ -1,0 +1,67 @@
+return {
+    walking = function (cutscene)
+        local susie = cutscene:getCharacter("susie")
+        local kris = cutscene:getCharacter("kris")
+        cutscene:detachFollowers()
+        cutscene:wait(cutscene:fadeOut(0))
+        cutscene:walkTo(susie, 3600, 310, 0.1, "right")
+        cutscene:walkTo(kris, 3540, 330, 0.1, "right")
+        cutscene:fadeIn(3)
+        cutscene:walkTo(susie, 3780, 310, 4, "down")
+        cutscene:wait(cutscene:walkTo(kris, 3780, 330, 4, "up"))
+        cutscene:wait(0.5)
+        cutscene:setSpeaker(susie)
+        cutscene:text("* So...[wait:5] here it is.", "smirk")
+        cutscene:text("* Pretty sure my keys are...", "nervous_side")
+        -- here would go a sprite of Susie reaching for her keys in her pocket
+        cutscene:wait(2)
+        Assets.playSound("item")
+        cutscene:wait(1)
+        cutscene:wait(cutscene:walkTo(susie, 3780, 220, 1, "up"))
+        susie:setSprite(nil)
+        Assets.playSound("dooropen")
+        cutscene:walkTo(kris, 3780, 220, 1, "up")
+        cutscene:wait(0.2)
+        Assets.playSound("doorclose")
+        cutscene:wait(0.8)
+        kris:setSprite(nil)
+        cutscene:fadeOut(0.5)
+        Assets.playSound("dooropen")
+        cutscene:wait(0.2)
+        Assets.playSound("doorclose")
+        cutscene:wait(0.8)
+        cutscene:wait(cutscene:mapTransition("hometown/susiehouse/susie_room"))
+        cutscene:after(cutscene:gotoCutscene("susie_house.chat_inside"))
+    end,
+
+    chat_inside = function (cutscene)
+        cutscene:fadeIn(2)
+            local susie = cutscene:getCharacter("susie")
+            local kris = cutscene:getCharacter("kris")
+            cutscene:detachFollowers()
+            cutscene:wait(cutscene:walkTo(susie, "susie_spawn", 0.1, "left"))
+            cutscene:walkTo(susie, 160, 377, 1, "right")
+            cutscene:wait(cutscene:walkTo(kris, 395, 320, 1, "left"))
+            cutscene:setSpeaker(susie)
+            cutscene:text("* Welcome to...[wait:5] my palace!", "annoyed_down", {["top"] = true})
+            cutscene:text("* Whenever you want, we can get started with the project.", "nervous_side", {["top"] = true})
+            susie:convertToNPC({["facing"] = "right", ["turn"] = true, ["cutscene"] = "susie_house.study_session"})
+            return
+    end,
+
+    study_session = function (cutscene)
+        local susie = cutscene:getCharacter("susie")
+        cutscene:text("* Are you ready to start the project?")
+        local opinion = cutscene:choicer({"Ready", "Not yet"})
+        cutscene:setSpeaker(susie)
+        if opinion == 1 then
+            cutscene:text("* Well, let's get this thing going.", "smile")
+            cutscene:fadeOut(1)
+            cutscene:text("* Susie and you spent the next two hours doing the bare minimum amount of work.")
+            Game:setFlag("hometown_time", "sunset")
+            cutscene:fadeIn(1)
+        else
+            cutscene:text("* Hurry up! We don't have all day!!", "teeth")
+        end
+    end
+}

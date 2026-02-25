@@ -1,13 +1,13 @@
 {
   // The ID of your mod. Should be unique!!
-  "id": "hometown_recreation",
+  "id": "the_garden",
   // Displays on the main menu.
-  "name": "Hometown Recreation",
+  "name": "The Garden",
   // Displays underneath the name. Optional.
   "subtitle": "",
 
   // The version of your mod.
-  "version": "v2.0",
+  "version": "v1.0",
   // What version of the engine your mod was made with.
   "engineVer": "v0.10.0-dev",
 
@@ -17,7 +17,7 @@
   "chapter": 4,
 
   // The map that you start in when first starting the mod.
-  "map": "castle_room_kris_susie",
+  "map": "hometown/school/school_door",
 
   // The party. The first character is the player.
   "party": ["kris", "susie"],

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="39">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="inside" type="bool" value="true"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="name" value="Susie's Room"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/susiehouse/sus_room.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="12" gid="136" x="257" y="298.333" width="62" height="74"/>
+  <object id="13" gid="135" x="428.333" y="315.667" width="82" height="137"/>
+  <object id="14" name="interactable" x="266.667" y="255.333" width="46" height="42">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* It looks like a shirt.[wait:5] It could probably fit Susie."/>
+    <property name="text2" value="* The idea of Susie wearing formal clothes results strange..."/>
+    <property name="text3" value="* ... but also appealing to you."/>
+   </properties>
+  </object>
+  <object id="17" name="interactable" x="430.667" y="200" width="78.6667" height="105.333">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* Susie's bed. It looks as if it's been torn by claws."/>
+    <property name="text2" value="* As a bed inspector, this doesn't look too comfy."/>
+   </properties>
+  </object>
+  <object id="18" name="interactable" x="160" y="169" width="73" height="31">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* A poster of a monster movie with a giant lizard."/>
+    <property name="text2" value="* There's something drawn at the bottom of it:"/>
+    <property name="text3" value="* &quot;me [font:ari-w9500-bold]↗[font:reset] &quot;."/>
+   </properties>
+  </object>
+  <object id="20" name="interactable" x="280" y="171" width="75" height="29">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* From here, you can almost see the lake."/>
+   </properties>
+  </object>
+  <object id="31" gid="138" x="126.333" y="270" width="60" height="100"/>
+  <object id="32" name="interactable" x="125" y="171" width="59.5" height="85">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="34" gid="137" x="124" y="283" width="32" height="38"/>
+  <object id="36" name="interactable" x="126" y="250" width="28" height="28">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <imagelayer id="6" name="sunset">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/susiehouse/sus_room_sunset.png" width="640" height="480"/>
+  <properties>
+   <property name="cond" value="Game:getFlag(&quot;hometown_time&quot;) == &quot;sunset&quot;"/>
+  </properties>
+ </imagelayer>
+ <objectgroup color="#0000ff" id="3" name="collision">
+  <object id="6" x="120" y="400" width="400" height="40"/>
+  <object id="7" x="120" y="40" width="400" height="40"/>
+  <object id="9" x="80" y="80" width="44" height="320"/>
+  <object id="11" x="514.667" y="80" width="45.3333" height="317.333"/>
+  <object id="22" x="126" y="160" width="34" height="40"/>
+  <object id="24" x="235" y="160" width="45" height="40"/>
+  <object id="28" x="355" y="161" width="72" height="39"/>
+ </objectgroup>
+ <objectgroup color="#5500ff" id="5" name="markers">
+  <object id="29" name="spawn" x="395" y="378">
+   <point/>
+  </object>
+  <object id="37" name="susie_spawn" x="201" y="377">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

@@ -130,6 +130,50 @@ return {
 	else
             cutscene:text("* (It's good to conserve water.)")
 	end
-    end
+    end,
 
+    studychoice = function (cutscene, event)
+      local x = event.x + event.width/2
+      local y = event.y + event.height/2
+
+      cutscene:detachCamera()
+      cutscene:detachFollowers()
+
+
+      local susie = cutscene:getCharacter("susie")
+      local kris = cutscene:getCharacter("kris")
+
+      cutscene:walkTo(susie, x+30, y+180, 2)
+      cutscene:wait(0.2)
+      cutscene:wait(cutscene:walkTo(kris, x-30, y+180, 2))
+      cutscene:wait(1)
+      kris:setSprite("walk/right_1")
+      susie:setSprite("walk/left_1")
+      cutscene:setSpeaker(susie)
+      cutscene:text("* Hmm.", "neutral_side")
+      print(World.fader)
+      cutscene:text("* Well, where should we go make our project?", "smirk")
+      local studyplace = cutscene:choicer({"Home", "Library", "Lake", "Noelle's"})
+      if studyplace == 1 then
+        cutscene:text("* Uhh...[wait:5] Are you sure?", "nervous")
+        cutscene:text("* I mean, yeah. But...[wait:5] after last night...", "annoyed_down")
+        local susieOrLibrary = cutscene:choicer({"Let's go to\nyour house", "Let's go\nsomewhere else"})
+        if susieOrLibrary == 1 then
+          cutscene:text("* M-My place??", "shock")
+          cutscene:wait(1)
+          cutscene:text("* Well, if you don't mind a little chaos...", "nervous_side")
+          cutscene:text("* Come on, follow me.", "smile")
+          susie:resetSprite()
+          kris:resetSprite()
+          cutscene:walkTo(susie, x, y+400, 1.5)
+          cutscene:wait(0.5)
+          cutscene:walkTo(kris, x, y+400, 1.5)
+          cutscene:wait(cutscene:fadeOut(1))
+          Assets.playSound("escaped")
+          cutscene:wait(cutscene:mapTransition("hometown/town_mid", 3500, 310))
+          cutscene:after(cutscene:gotoCutscene("susie_house.walking"))
+          return
+        end
+      end
+    end
 }

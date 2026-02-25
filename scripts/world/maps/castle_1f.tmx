@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="31" height="12" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextlayerid="11" nextobjectid="37">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="31" height="12" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#000000" nextlayerid="11" nextobjectid="38">
  <editorsettings>
   <export target="castle_1f.lua" format="lua"/>
  </editorsettings>
@@ -28,7 +28,7 @@
  <objectgroup color="#ff55ff" id="5" name="objects_decor_above">
   <object id="1" gid="168" x="520" y="400" width="200" height="160" visible="0"/>
  </objectgroup>
- <objectgroup color="#5500ff" id="10" name="markers">
+ <objectgroup color="#aa00ff" id="10" name="markers">
   <object id="33" name="spawn" x="619" y="434">
    <point/>
   </object>
