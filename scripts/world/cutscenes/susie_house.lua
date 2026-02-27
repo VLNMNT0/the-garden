@@ -51,6 +51,7 @@ return {
 
     study_session = function (cutscene)
         local susie = cutscene:getCharacter("susie")
+        local kris = cutscene:getCharacter("kris")
         cutscene:text("* Are you ready to start the project?")
         local opinion = cutscene:choicer({"Ready", "Not yet"})
         cutscene:setSpeaker(susie)
@@ -59,6 +60,10 @@ return {
             cutscene:fadeOut(1)
             cutscene:text("* Susie and you spent the next two hours doing the bare minimum amount of work.")
             Game:setFlag("hometown_time", "sunset")
+            susie:setSprite("sitting_down")
+            kris:setSprite("lying_down")
+            cutscene:wait(cutscene:walkTo(susie, 220, 225, 0.1))
+            cutscene:wait(cutscene:walkTo(kris, 440, 240, 0.1))
             cutscene:fadeIn(1)
         else
             cutscene:text("* Hurry up! We don't have all day!!", "teeth")
